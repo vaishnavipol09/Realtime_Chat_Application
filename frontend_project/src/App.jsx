@@ -1,9 +1,13 @@
 import React from "react"
-
+import LoginPage from "./pages/LoginPage";
 const App = () => {
+
+  const user = false;
   return (
     <>
-      <h1>Welcome to chat application project</h1>
+      <div>
+        {!user ? <LoginPage/> : <HomePage/>}
+      </div>
     </>
   )
 }
